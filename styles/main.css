@@ -157,6 +157,7 @@ section {
 @media (max-width: 768px) {
     header {
         font-size: 3rem;
+        position: static;
     }
 
     nav {
@@ -185,9 +186,7 @@ section {
         grid-template-columns: 1fr; /* Switch to 1 column */
         gap: 15px; /* Slightly smaller gap */
     }
-    section {
-        scroll-margin-top: 160px;
-    }
+ 
 }
 
 #me-header{
