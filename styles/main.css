@@ -175,6 +175,12 @@ section {
     margin-top: 150px;
     font-weight: bold;
 }
+
+#contact a{
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
 /* MEDIA QUERIES - Responsive Design */
 @media (max-width: 768px) {
     header {
