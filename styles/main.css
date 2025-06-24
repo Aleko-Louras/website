@@ -253,6 +253,9 @@
     #name {
       font-size: 2.2rem;
     }
+    body{
+        overscroll-behavior: none;
+    }
   
     nav a {
       font-size: 0.95rem;
