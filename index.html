@@ -1,31 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleko Louras</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            if (window.location.pathname.endsWith(".html")) {
-                window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
-            }
-        });
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aleko Louras</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.location.pathname.endsWith(".html")) {
+        window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+      }
+
+      // Animate hero on load
+      document.getElementById("hero").classList.add("visible");
+    });
+  </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="me.html">About Me</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <h1><a id="name" href="index.html">Aleko Louras</a></h1>
-    </header>
-    <main>
-        <section id="hero" class="hidden">
-            <img src="assets/3B010611-C811-4250-9323-F34BF0208D72_1_105_c.jpeg" alt="Aleko Louras' Photo">
-        </section>
-    </main>
+  <header>
+    <nav>
+      <a href="me.html">About Me</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <h1><a id="name" href="/">Aleko Louras</a></h1>
+  </header>
+
+  <main>
+    <section id="hero">
+      <img src="assets/3B010611-C811-4250-9323-F34BF0208D72_1_105_c.jpeg" alt="Aleko Louras Photo" />
+      <p>Web Developer • Android/iOS Developer • Security Analyst</p>
+    </section>
+  </main>
 </body>
 </html>

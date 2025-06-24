@@ -1,64 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            if (window.location.pathname.endsWith(".html")) {
-                window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
-            }
-        });
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.location.pathname.endsWith(".html")) {
+        window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+      }
+      document.getElementById("portfolio").classList.add("visible");
+    });
+  </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="me.html">About Me</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <h1><a id="name" href="index.html">Aleko Louras</a></h1>
-    </header>
-    <section id="portfolio" class="hidden">
-        <h2>Portfolio</h2>
-        <h3><a href="assets/Aleko_Resume_pdf.pdf" target="_blank">Resume</a></h3>
-        <div class="portfolio-grid">
-            <div class="project">
-                <h3>PickleBall Video Assistant Referee</h3>
-                <h4>React-Native/OpenCV/Firebase</h4>
-                <p>Out of Bounds detector for pickleball utilizing react-native vision camera. Upload or download
-                    recordings of games to the cloud or download to phones local storage. Simple and easy to use UI.
-                    App running on iPhone 16 Pro Max.
-                </p>
-                <img class="app" src="assets/pbvar.png" alt="Log in screen for PBVar">
-            </div>
-            <div class="project">
-                <h3>QuickDraw</h3>
-                <h4>Android-SDK/JetpackCompose/RoomDB/Firebase</h4>
-                <p>A mobile drawing app. Draw with your finger, change brush color with color preview, change the brush size, and change the brush shape (triangle, circle, square). Feel free to 
-                    draw a straight line between two points. Upload drawings to a common feed that other users can download from to their device and edit. Share drawings through bluetooth as well.
-                    App running on Google Pixel.
-                </p>
-                <img class="app" src="assets/quickdraw.png" alt="Drawing screen for QuickDraw">
-            </div>
-            <div class="project">
-                <h3>DSFO</h3>
-                <h4>C++/Box2D/Qt</h4>
-                <p>Airport simulated DSA educational app. Learn algorithms and sorting with word problems and an interactive interface to assist with 
-                    visual learning. Answer questions to test your understanding. Plane graphics implemented with Box2D. App running on windows 11.</p>
-                <img class="dsfo" src="assets/dsfo.png" alt="Teaching screen for depth first search">
-            </div>
-            <div class="project">
-                <h3>Pony-Express</h3>
-                <h4>FastAPI/SQLAlchemy/React/TanStackQuery</h4>
-                <p>Web Chat Application. Create and sign in with your account and edit/delete as well. Freely chat friends with an intuitive UI, and be able to edit/delete existing sent 
-                    messages. App running on chrome</p>
-                <img class="pony" src="assets/pony.png" alt="Chat message screen of pony express">
-            </div>
-        </div>
-    </section>
+  <header>
+    <nav>
+      <a href="me.html">About Me</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <h1><a id="name" href="index.html">Aleko Louras</a></h1>
+  </header>
+
+  <section id="portfolio" class="hidden">
+    <h2>My Work</h2>
+    <h3><a href="assets/Aleko-Louras-Resume.pdf" target="_blank">View My Resume</a></h3>
+
+    <div class="portfolio-grid">
+      <div class="project">
+        <h3>PBVAR</h3>
+        <h4>React Native • OpenCV • Firebase</h4>
+        <p>An out-of-bounds detector for Pickleball using Vision Camera. Upload, download, and review games via cloud or local storage. iPhone 16 Pro Max compatible.</p>
+        <img class="app" src="assets/pbvar.png" alt="Pickleball app login screen">
+      </div>
+
+      <div class="project">
+        <h3>QuickDraw</h3>
+        <h4>AndroidJPC • Firebase • Bluetooth</h4>
+        <p>A collaborative drawing app with color/brush options and bluetooth sharing. Upload creations to a public feed. Runs on Google Pixel devices.</p>
+        <img class="app" src="assets/quickdraw.png" alt="QuickDraw drawing screen">
+      </div>
+
+      <div class="project">
+        <h3>DSFO</h3>
+        <h4>C++ • Box2D • Qt</h4>
+        <p>Interactive educational simulator to teach algorithms with word problems and graphics. Planes and animations powered by Box2D. Runs on Windows 11.</p>
+        <img class="dsfo" src="assets/dsfo.png" alt="DFS demo screen in DSFO app">
+      </div>
+
+      <div class="project">
+        <h3>Pony Express</h3>
+        <h4>FastAPI • React • SQLAlchemy</h4>
+        <p>Chat app with authentication, message editing, and friend interactions. Clean and intuitive UI powered by TanStack Query. Running on Chrome.</p>
+        <img class="pony" src="assets/pony.png" alt="Pony Express chat UI">
+      </div>
+      <div class="project">
+        <h3>Azure VM SIEM</h3>
+        <h4>Azure VM • Azure NSG • Azure Sentinel</h4>
+        <p>A Microsoft Azure SIEM system that forwards failed log in attempt (or any) logs to a geolocatable map with Log analytics workspace and Sentinel. Running on Chrome.</p>
+        <img class="azure" src="assets/azure.png" alt="Azure Home Soc Map">
+      </div>
+    </div>
+  </section>
 </body>
 </html>

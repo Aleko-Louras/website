@@ -1,32 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            if (window.location.pathname.endsWith(".html")) {
-                window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
-            }
-        });
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.location.pathname.endsWith(".html")) {
+        window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+      }
+      document.getElementById("contact").classList.add("visible");
+    });
+  </script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="me.html">About Me</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <h1><a id="name" href="index.html">Aleko Louras</a></h1>
-    </header>
-    <section id="contact" class="hidden">
-        <h2>Contact</h2>
-        <a href="mailto:alekolouras@gmail.com">alekolouras@gmail.com</a>
-        <a href="https://github.com/Aleko-Louras" target="_blank">Github</a>
-        <a href="https://www.linkedin.com/in/aleko-louras-4a0a73227" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </section>
+  <header>
+    <nav>
+      <a href="me.html">About Me</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <h1><a id="name" href="index.html">Aleko Louras</a></h1>
+  </header>
+
+  <section id="contact" class="hidden">
+    <h2>Let's Connect</h2>
+    <p>You can reach me through the following platforms:</p>
+    <div class="contact-links">
+      <a href="mailto:alekolouras@gmail.com">alekolouras@gmail.com</a>
+      <a href="https://github.com/Aleko-Louras" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/aleko-louras-4a0a73227" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </section>
 </body>
 </html>
