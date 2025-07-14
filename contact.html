@@ -11,9 +11,19 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       if (window.location.pathname.endsWith(".html")) {
-        window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+        const cleanPath = window.location.pathname.replace(/\/?([^\/]+)\.html$/, "/$1");
+        window.history.replaceState(null, "", cleanPath);
       }
-      document.getElementById("contact").classList.add("visible");
+  
+      const contactSection = document.getElementById("contact");
+      if (contactSection) {
+        contactSection.classList.add("visible");
+      }
+  
+      const heroSection = document.getElementById("hero");
+      if (heroSection) {
+        heroSection.classList.add("visible");
+      }
     });
   </script>
 </head>
