@@ -1,6 +1,7 @@
 /* Reset & Base */
 html {
   background-color: #111;
+  overscroll-behavior: none;
 }
 * {
     box-sizing: border-box;
