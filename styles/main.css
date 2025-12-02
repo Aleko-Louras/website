@@ -78,6 +78,7 @@
     width: 300px;
     height: 300px;
     object-fit: cover;
+    object-position: center 20%;
     border-radius: 50%;
     margin-bottom: 2rem;
     border: 4px solid lightgray;
@@ -103,6 +104,7 @@
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    padding-top: 70px;
   }
   
   #contact.visible {
@@ -123,20 +125,21 @@
   
   .contact-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
     gap: 1.2rem;
-    margin-top: 1rem;
+    margin-top: 3.5rem;
   }
   
   .contact-links a {
-    font-size: 1.25rem;
-    color: #4db8ff;
-    text-decoration: none;
+    font-size: 40px;
+    color: #817e7e;
     transition: color 0.3s;
   }
   
   .contact-links a:hover {
-    color: #00aaff;
+    color: #5595b6;
   }
   
   /* About Section */
