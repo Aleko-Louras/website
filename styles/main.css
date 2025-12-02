@@ -1,4 +1,7 @@
 /* Reset & Base */
+html {
+  background-color: #111;
+}
 * {
     box-sizing: border-box;
     margin: 0;
